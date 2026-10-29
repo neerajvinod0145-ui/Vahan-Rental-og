@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root{font-family:"DM Sans",sans-serif;color:#172b3a;background:#f6f8fa;font-synthesis:none;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+a{color:#087e8b;text-decoration:none}
+a:hover{text-decoration:underline}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+button:disabled{opacity:.65;cursor:not-allowed}
+.header{height:76px;padding:0 clamp(20px,7vw,100px);display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #e7edf0;position:sticky;top:0;z-index:2}
+.brand{font:800 1.45rem Manrope,sans-serif;letter-spacing:-.7px;color:#102a43}
+.brand span{color:#0b8793}
+.header nav{display:flex;align-items:center;gap:clamp(12px,2.6vw,30px);font-weight:600;font-size:.92rem}
+.header nav a{color:#425466}
+.nav-button{border:0;background:none;color:#087e8b;font-weight:700;padding:8px}
+.hero{background:linear-gradient(115deg,#102a43,#124e5b);color:#fff;padding:clamp(55px,9vw,112px) clamp(24px,10vw,145px) 80px;min-height:390px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#0b8793;margin:0 0 12px}
+.hero .eyebrow{color:#7fe1d4}
+.hero h1{font:800 clamp(2.7rem,6vw,5.2rem)/1.04 Manrope,sans-serif;letter-spacing:-3px;margin:0;max-width:760px}
+.hero h1 span{color:#7fe1d4}
+.hero-copy{color:#d1e1e7;max-width:510px;line-height:1.7;font-size:1.05rem;margin:22px 0 28px}
+.primary-link{display:inline-block;background:#7fe1d4;color:#102a43;border-radius:8px;padding:13px 18px;font-weight:700}
+.section{padding:58px clamp(20px,7vw,100px) 78px;max-width:1500px;margin:auto}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}
+h2,h1,h3{font-family:Manrope,sans-serif;letter-spacing:-.6px}
+.section-heading h2{font-size:2rem;margin:0}
+.count,.muted{color:#718096}
+.count{font-size:.9rem}
+.filters{display:flex;gap:10px;margin-bottom:28px}
+input,select,textarea{width:100%;border:1px solid #d7e0e5;background:#fff;border-radius:8px;padding:12px;color:#172b3a;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#0b8793;box-shadow:0 0 0 3px #0b87931a}
+.filters input{max-width:430px}
+.filters select{max-width:150px}
+.primary-button,.secondary-button{border:0;border-radius:8px;padding:12px 16px;font-weight:700}
+.primary-button{background:#087e8b;color:white}
+.primary-button:hover{background:#066975}
+.secondary-button{background:#e2f1f2;color:#075e68}
+.full{width:100%}
+.vehicle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.vehicle-card{background:#fff;border:1px solid #e5ebef;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px #193b4a08}
+.vehicle-image,.vehicle-placeholder{width:100%;height:190px;object-fit:cover}
+.vehicle-placeholder{background:linear-gradient(135deg,#dff3f0,#e7edf7);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px}
+.vehicle-placeholder span{font-size:3.5rem}.vehicle-placeholder small{font-weight:700;color:#54717b;text-transform:uppercase;letter-spacing:1px}
+.vehicle-body{padding:20px}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{display:inline-block;background:#e3f5f1;color:#087565;border-radius:100px;padding:5px 10px;font-size:.72rem;font-weight:700}
+.location{font-size:.78rem;color:#718096}
+.vehicle-body h3{font-size:1.2rem;margin:14px 0 5px}
+.vehicle-body .muted{font-size:.85rem;line-height:1.5;min-height:22px}
+.price{font:800 1.4rem Manrope,sans-serif;margin:16px 0}
+.price span{font:400 .85rem "DM Sans",sans-serif;color:#718096}
+.date-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:15px}
+label{display:flex;flex-direction:column;gap:7px;font-size:.86rem;font-weight:600;margin:12px 0}
+.date-fields label{font-size:.76rem;color:#526574}
+.date-fields input{padding:9px 6px;font-size:.78rem;min-width:0}
+.notice,.success,.error{padding:12px 14px;border-radius:8px;line-height:1.5}
+.notice{background:#fff5db;color:#805d0d}.success{background:#e2f6e9;color:#17683a}.error{background:#ffeded;color:#a12b2b}
+.empty{text-align:center;padding:44px 20px;background:#fff;border:1px dashed #d4e0e5;border-radius:12px;color:#526574}
+.empty h3{color:#172b3a;margin-top:0}.empty p{margin-bottom:0}
+.auth-wrap{padding:54px 20px 80px;display:flex;justify-content:center}
+.auth-card{width:min(100%,440px);padding:34px;background:#fff;border:1px solid #e5ebef;border-radius:16px;box-shadow:0 8px 28px #193b4a0b}
+.auth-card.wide{width:min(100%,600px)}
+.auth-card h1{font-size:2rem;margin:0 0 8px}
+.auth-card>.muted{line-height:1.5;margin-bottom:24px}
+.auth-card label small{color:#718096;font-weight:400}
+.auth-switch{text-align:center;font-size:.9rem;color:#526574;margin:22px 0 0}
+.page-section h1{font-size:2.4rem;margin:0 0 28px}
+.booking-list{display:grid;gap:12px}
+.booking-row{display:flex;align-items:center;justify-content:space-between;background:white;border:1px solid #e5ebef;padding:20px;border-radius:12px}
+.booking-row h3{margin:10px 0 4px}.booking-row p{margin:0}
+.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.footer{text-align:center;padding:26px 20px;background:#102a43;color:#d1e1e7;font-size:.85rem}
+.footer span{color:#7fe1d4;padding:0 5px}
+@media(max-width:900px){.vehicle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{letter-spacing:-2px}}
+@media(max-width:620px){.header{padding:0 16px;height:68px}.brand{font-size:1.2rem}.header nav{gap:10px;font-size:.8rem}.hero{padding:60px 24px}.hero h1{font-size:3.1rem}.section{padding:42px 18px 58px}.vehicle-grid{grid-template-columns:1fr}.filters{flex-wrap:wrap}.filters input{max-width:none;flex:1 1 100%}.filters select{flex:1}.filters button{flex:1}.auth-card{padding:24px}.two-cols{grid-template-columns:1fr}.section-heading h2{font-size:1.6rem}.date-fields{gap:8px}}
